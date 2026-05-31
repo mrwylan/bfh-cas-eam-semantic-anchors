@@ -45,7 +45,8 @@ Semantic Anchors können auch im Lernbericht als Strukturierungshilfe dienen, um
 
 = Weiterführende Ressourcen
 
-- #link("https://llm-coding.github.io/Semantic-Anchors/")[Semantic Anchors Catalog] – Kuratierter Katalog für LLM-Kommunikation (LLM-Coding Community) @semantic_anchors_catalog
+- #link("https://raifdmueller.github.io/Semantic-Anchors/")[Semantic Anchors Catalog] von Ralf D. Müller – Ursprung des Konzepts und kuratierter Katalog für LLM-Kommunikation @semantic_anchors_catalog
+- #link("https://www.linkedin.com/in/rdmueller/")[Ralf D. Müller] – Profil des Urhebers des Semantic-Anchors-Konzepts
 - #link("https://github.com/LLM-Coding/Semantic-Anchors")[GitHub Repository] – Quellcode und Beitragsmöglichkeiten
 - TOGAF#super[®] Standard, Version 9.2 (The Open Group, 2018) @opengroup2018togaf
 - Lankhorst, M. et al. (2017): _Enterprise Architecture at Work_, 4th Edition @lankhorst2017
