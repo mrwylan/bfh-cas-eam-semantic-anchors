@@ -1,37 +1,54 @@
-// ── Enterprise Architecture Management ──────────────────────────────────────
+// ── Semantic Anchors für Enterprise Architecture Management ─────────────────
+// Kuratierte Bibliographie. Die Einträge sind nach den Schlüsselautoren der
+// Semantic Anchors gegliedert und decken die CAS-Module 1–8 sowie die
+// Querschnitts-Anchors ab.
+
+// ── Quelle des Katalogs ─────────────────────────────────────────────────────
+
+@misc{semantic_anchors_catalog,
+  author       = {{LLM-Coding Community}},
+  title        = {Semantic Anchors Catalog},
+  howpublished = {\url{https://llm-coding.github.io/Semantic-Anchors/}},
+  year         = {2025},
+  note         = {Kuratierter Katalog für die Kommunikation mit Large Language Models}
+}
 
 @unpublished{Spichiger2026GFbUA,
-  author    = {Spichiger, Andreas and Jarchow, Thomas},
-  title     = {Geschäftsfähigkeiten-basierte Unternehmensarchitektur},
-  note      = {Kursunterlage CAS Enterprise Architecture Management FS2026, 
-               Berner Fachhochschule. Version 10. Mai 2026},
-  year      = {2026},
-  month     = {5},
+  author = {Spichiger, Andreas and Jarchow, Thomas},
+  title  = {Geschäftsfähigkeiten-basierte Unternehmensarchitektur},
+  note   = {Kursunterlage CAS Enterprise Architecture Management FS2026,
+            Berner Fachhochschule. Version 10. Mai 2026},
+  year   = {2026},
+  month  = {5}
 }
 
-@book{fowler2018,
-  author    = {Fowler, Martin},
-  title     = {Refactoring: Improving the Design of Existing Code},
-  edition   = {2nd},
-  publisher = {Addison-Wesley Professional},
-  year      = {2018},
-  isbn      = {978-0134757599}
+// ── Modul 1–2: Einführung & Unternehmen digitalisieren ──────────────────────
+
+@book{osterwalder2010,
+  author    = {Osterwalder, Alexander and Pigneur, Yves},
+  title     = {Business Model Generation},
+  publisher = {John Wiley \& Sons},
+  year      = {2010},
+  isbn      = {978-0470876411}
 }
 
-@book{opengroup2018togaf,
-  author    = {{The Open Group}},
-  title     = {TOGAF Standard, Version 9.2},
-  publisher = {The Open Group},
-  year      = {2018},
-  url       = {https://www.opengroup.org/togaf}
+@article{henderson1993,
+  author  = {Henderson, John C. and Venkatraman, N.},
+  title   = {Strategic Alignment: Leveraging Information Technology for Transforming Organizations},
+  journal = {IBM Systems Journal},
+  volume  = {32},
+  number  = {1},
+  pages   = {4--16},
+  year    = {1993},
+  doi     = {10.1147/sj.382.0472}
 }
 
-@book{opengroup2019archimate,
-  author    = {{The Open Group}},
-  title     = {ArchiMate 3.1 Specification},
-  publisher = {The Open Group},
-  year      = {2019},
-  url       = {https://www.opengroup.org/archimate-forum/archimate-overview}
+@book{westerman2014,
+  author    = {Westerman, George and Bonnet, Didier and McAfee, Andrew},
+  title     = {Leading Digital: Turning Technology into Business Transformation},
+  publisher = {Harvard Business Review Press},
+  year      = {2014},
+  isbn      = {978-1625272478}
 }
 
 @book{ross2006enterprise,
@@ -42,29 +59,57 @@
   isbn      = {978-1591398394}
 }
 
-@book{ulrich2011,
-  author    = {Ulrich, William and McWhorter, Neal},
-  title     = {Business Architecture: The Art and Practice of Business Transformation},
-  publisher = {Meghan-Kiffer Press},
-  year      = {2011},
-  isbn      = {978-0929652528}
+// ── Modul 3: Modellierungssprachen ──────────────────────────────────────────
+
+@book{opengroup2019archimate,
+  author    = {{The Open Group}},
+  title     = {ArchiMate 3.1 Specification},
+  publisher = {The Open Group},
+  year      = {2019},
+  url       = {https://www.opengroup.org/archimate-forum/archimate-overview}
 }
 
-@book{bass2012,
-  author    = {Bass, Len and Clements, Paul and Kazman, Rick},
-  title     = {Software Architecture in Practice},
-  edition   = {3rd},
-  publisher = {Addison-Wesley Professional},
-  year      = {2012},
-  isbn      = {978-0321815736}
+@book{lankhorst2017,
+  author    = {Lankhorst, Marc},
+  title     = {Enterprise Architecture at Work: Modelling, Communication and Analysis},
+  edition   = {4th},
+  publisher = {Springer},
+  year      = {2017},
+  isbn      = {978-3662539323}
 }
 
-@book{osterwalder2010,
-  author    = {Osterwalder, Alexander and Pigneur, Yves},
-  title     = {Business Model Generation},
-  publisher = {John Wiley \& Sons},
-  year      = {2010},
-  isbn      = {978-0470876411}
+@techreport{omg2011bpmn,
+  author      = {{Object Management Group}},
+  title       = {Business Process Model and Notation (BPMN), Version 2.0},
+  institution = {Object Management Group},
+  year        = {2011},
+  url         = {https://www.omg.org/spec/BPMN/2.0}
+}
+
+@techreport{omg2017uml,
+  author      = {{Object Management Group}},
+  title       = {OMG Unified Modeling Language (OMG UML), Version 2.5.1},
+  institution = {Object Management Group},
+  year        = {2017},
+  url         = {https://www.omg.org/spec/UML}
+}
+
+@techreport{iso42010,
+  author      = {{ISO/IEC/IEEE}},
+  title       = {ISO/IEC/IEEE 42010:2011 — Systems and Software Engineering — Architecture Description},
+  institution = {International Organization for Standardization},
+  year        = {2011},
+  url         = {https://www.iso.org/standard/50508.html}
+}
+
+// ── Modul 4: Enterprise Architektur ─────────────────────────────────────────
+
+@book{opengroup2018togaf,
+  author    = {{The Open Group}},
+  title     = {TOGAF Standard, Version 9.2},
+  publisher = {The Open Group},
+  year      = {2018},
+  url       = {https://www.opengroup.org/togaf}
 }
 
 @article{zachman1987,
@@ -78,52 +123,194 @@
   doi     = {10.1147/sj.263.0276}
 }
 
-@techreport{biz_arch_guild2017,
-  author      = {{Business Architecture Guild}},
-  title       = {A Guide to the Business Architecture Body of Knowledge (BIZBOK Guide)},
-  institution = {Business Architecture Guild},
-  year        = {2017},
-  url         = {https://www.businessarchitectureguild.org}
+@techreport{cmmi2010,
+  author      = {{CMMI Product Team}},
+  title       = {CMMI for Development, Version 1.3},
+  institution = {Software Engineering Institute, Carnegie Mellon University},
+  number      = {CMU/SEI-2010-TR-033},
+  year        = {2010}
 }
 
-@article{temkin2010,
-  author  = {Temkin, Bruce D.},
-  title   = {Mapping the Customer Journey},
-  journal = {Forrester Research},
-  year    = {2010}
+// ── Modul 5: Architektur Evolution ──────────────────────────────────────────
+
+@misc{gartner_time,
+  author       = {{Gartner}},
+  title        = {TIME Model for Application Portfolio Management (Tolerate, Invest, Migrate, Eliminate)},
+  howpublished = {Gartner Research},
+  year         = {2019}
 }
 
-@book{normann2001,
-  author    = {Normann, Richard},
-  title     = {Reframing Business: When the Map Changes the Landscape},
-  publisher = {John Wiley \& Sons},
-  year      = {2001},
-  isbn      = {978-0471496182}
+@inproceedings{cunningham1992,
+  author    = {Cunningham, Ward},
+  title     = {The WyCash Portfolio Management System},
+  booktitle = {OOPSLA '92 Experience Report},
+  year      = {1992},
+  doi       = {10.1145/157709.157715}
 }
 
-@book{tercek2015,
-  author    = {Tercek, Robert},
-  title     = {Vaporized: Solid Strategies for Success in a Dematerialized World},
-  publisher = {LifeTree Media},
-  year      = {2015},
-  isbn      = {978-1928055112}
+@book{fowler2018,
+  author    = {Fowler, Martin},
+  title     = {Refactoring: Improving the Design of Existing Code},
+  edition   = {2nd},
+  publisher = {Addison-Wesley Professional},
+  year      = {2018},
+  isbn      = {978-0134757599}
 }
 
-@book{stickdorn2011,
-  author    = {Stickdorn, Marc and Schneider, Jakob},
-  title     = {This is Service Design Thinking: Basics, Tools, Cases},
-  publisher = {BIS Publishers},
-  year      = {2011},
-  isbn      = {978-0470819814}
+@article{wack1985,
+  author  = {Wack, Pierre},
+  title   = {Scenarios: Uncharted Waters Ahead},
+  journal = {Harvard Business Review},
+  volume  = {63},
+  number  = {5},
+  pages   = {73--89},
+  year    = {1985}
 }
 
-@article{lemon2016,
-  author  = {Lemon, Katherine N. and Verhoef, Peter C.},
-  title   = {Understanding Customer Experience Throughout the Customer Journey},
-  journal = {Journal of Marketing},
-  volume  = {80},
-  number  = {6},
-  pages   = {69--96},
-  year    = {2016},
-  doi     = {10.1509/jm.15.0420}
+@book{schwartz1996,
+  author    = {Schwartz, Peter},
+  title     = {The Art of the Long View: Planning for the Future in an Uncertain World},
+  publisher = {Currency Doubleday},
+  year      = {1996},
+  isbn      = {978-0385267328}
+}
+
+@book{ford2017,
+  author    = {Ford, Neal and Parsons, Rebecca and Kua, Patrick},
+  title     = {Building Evolutionary Architectures: Support Constant Change},
+  publisher = {O'Reilly Media},
+  year      = {2017},
+  isbn      = {978-1491986363}
+}
+
+// ── Modul 6: Ablauforganisation ─────────────────────────────────────────────
+
+@book{womack2003,
+  author    = {Womack, James P. and Jones, Daniel T.},
+  title     = {Lean Thinking: Banish Waste and Create Wealth in Your Corporation},
+  edition   = {2nd},
+  publisher = {Free Press},
+  year      = {2003},
+  isbn      = {978-0743249270}
+}
+
+@book{hammer1993,
+  author    = {Hammer, Michael and Champy, James},
+  title     = {Reengineering the Corporation: A Manifesto for Business Revolution},
+  publisher = {Harper Business},
+  year      = {1993},
+  isbn      = {978-0060559533}
+}
+
+@article{conway1968,
+  author  = {Conway, Melvin E.},
+  title   = {How Do Committees Invent?},
+  journal = {Datamation},
+  volume  = {14},
+  number  = {4},
+  pages   = {28--31},
+  year    = {1968}
+}
+
+// ── Modul 7: Information Systems Architektur ─────────────────────────────────
+
+@book{hohpe2003,
+  author    = {Hohpe, Gregor and Woolf, Bobby},
+  title     = {Enterprise Integration Patterns: Designing, Building, and Deploying Messaging Solutions},
+  publisher = {Addison-Wesley Professional},
+  year      = {2003},
+  isbn      = {978-0321200686}
+}
+
+@book{evans2003,
+  author    = {Evans, Eric},
+  title     = {Domain-Driven Design: Tackling Complexity in the Heart of Software},
+  publisher = {Addison-Wesley Professional},
+  year      = {2003},
+  isbn      = {978-0321125217}
+}
+
+@book{dama2017,
+  author    = {{DAMA International}},
+  title     = {DAMA-DMBOK: Data Management Body of Knowledge},
+  edition   = {2nd},
+  publisher = {Technics Publications},
+  year      = {2017},
+  isbn      = {978-1634622349}
+}
+
+@book{erl2005,
+  author    = {Erl, Thomas},
+  title     = {Service-Oriented Architecture: Concepts, Technology, and Design},
+  publisher = {Prentice Hall},
+  year      = {2005},
+  isbn      = {978-0131858589}
+}
+
+// ── Modul 8: Aktuelle Themen E-Architektur ──────────────────────────────────
+
+@misc{wiggins2011,
+  author       = {Wiggins, Adam},
+  title        = {The Twelve-Factor App},
+  howpublished = {\url{https://12factor.net}},
+  year         = {2011}
+}
+
+@techreport{nist2020zerotrust,
+  author      = {Rose, Scott and Borchert, Oliver and Mitchell, Stu and Connelly, Sean},
+  title       = {Zero Trust Architecture},
+  institution = {National Institute of Standards and Technology},
+  number      = {NIST Special Publication 800-207},
+  year        = {2020},
+  doi         = {10.6028/NIST.SP.800-207}
+}
+
+@misc{gartner_bimodal,
+  author       = {{Gartner}},
+  title        = {Bimodal IT and Pace-Layered Application Strategy},
+  howpublished = {Gartner Research},
+  year         = {2014}
+}
+
+@book{skelton2019,
+  author    = {Skelton, Matthew and Pais, Manuel},
+  title     = {Team Topologies: Organizing Business and Technology Teams for Fast Flow},
+  publisher = {IT Revolution Press},
+  year      = {2019},
+  isbn      = {978-1942788812}
+}
+
+// ── Querschnitts-Anchors ────────────────────────────────────────────────────
+
+@book{wardley2022,
+  author    = {Wardley, Simon},
+  title     = {Wardley Maps: Topographical Intelligence in Business},
+  publisher = {Self-published (Medium)},
+  year      = {2022},
+  url       = {https://medium.com/wardleymaps}
+}
+
+@misc{nygard2011adr,
+  author       = {Nygard, Michael},
+  title        = {Documenting Architecture Decisions},
+  howpublished = {\url{https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions}},
+  year         = {2011}
+}
+
+@book{deming1986,
+  author    = {Deming, W. Edwards},
+  title     = {Out of the Crisis},
+  publisher = {MIT Press},
+  year      = {1986},
+  isbn      = {978-0262541152}
+}
+
+// ── Kritische Reflexion ─────────────────────────────────────────────────────
+
+@book{kotusev2018,
+  author    = {Kotusev, Svyatoslav},
+  title     = {The Practice of Enterprise Architecture: A Modern Approach to Business and IT Alignment},
+  publisher = {SK Publishing},
+  year      = {2018},
+  isbn      = {978-0648309901}
 }

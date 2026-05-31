@@ -1,10 +1,14 @@
-# BFH CAS Enterprise Architecture Management — Learning Path Documentation
+# Semantic Anchors für Enterprise Architecture Management
 
-[![Compile Typst Document](https://github.com/mrwylan/bfh-cas-eam/actions/workflows/compile.yml/badge.svg)](https://github.com/mrwylan/bfh-cas-eam/actions/workflows/compile.yml)
+[![Compile Typst Document](https://github.com/mrwylan/bfh-cas-eam-semantic-anchors/actions/workflows/compile.yml/badge.svg)](https://github.com/mrwylan/bfh-cas-eam-semantic-anchors/actions/workflows/compile.yml)
 
-A production-ready, Git-optimized document repository for the  
-**BFH CAS Enterprise Architecture Management** learning path documentation (_Lernpfaddokumentation_).  
-Written in [Typst](https://typst.app) — a modern, code-first typesetting system.
+A production-ready, Git-optimized document repository that renders the
+**Semantic Anchors für Enterprise Architecture Management** reference (German, Swiss notation)
+to PDF. Written in [Typst](https://typst.app) — a modern, code-first typesetting system.
+
+The content source lives in [`doc/semantic-anchors-ea.md`](doc/semantic-anchors-ea.md); the
+Typst layout in `template.typ` is reused as a documentation-generation template — drop new
+content, keep the structure.
 
 ---
 
@@ -117,24 +121,31 @@ extension for live preview, syntax highlighting, and autocompletion.
 ```
 .
 ├── main.typ                        ← Root assembly: metadata + chapter includes + bibliography
-├── template.typ                    ← Layout engine: page setup, fonts, title block, ToC
-├── refs.bib                        ← BibLaTeX references (IEEE style)
+├── template.typ                    ← Layout engine: page setup, fonts, de-CH locale, table builders
+├── refs.bib                        ← Curated BibLaTeX references (IEEE style, full bibliography)
+├── doc/
+│   └── semantic-anchors-ea.md      ← Content source (Markdown)
 ├── .github/
 │   └── workflows/
 │       └── compile.yml             ← CI: compiles PDF on every push/PR to main
-└── chapters/
-    ├── 01_intro_context.typ        ← Ch. 1 Introduction & Context + Ch. 2 Theory
-    ├── 02_customer_journey.typ     ← Ch. 3 Collaboration Phase / Customer Journey
-    ├── 03_ea_realization.typ       ← Ch. 4 EA Realization + Ch. 5 Target Architecture
-    └── 04_learning_path.typ        ← Ch. 6 Methodological Reflection + Ch. 7 Conclusion
+├── chapters/
+│   ├── 01_konzept.typ              ← Ch. 1 Konzept + Qualitätskriterien
+│   ├── 02_modul_anchors.typ        ← Ch. 2 Semantic Anchors nach CAS-Modulen (1–8)
+│   ├── 03_querschnitt_anchors.typ  ← Ch. 3 Querschnitts-Anchors
+│   └── 04_anwendung.typ            ← Ch. 4 Anwendungshinweise + Weiterführende Ressourcen
+└── tables/
+    ├── modul_01_02.typ … modul_08.typ  ← One anchor table per CAS module
+    └── querschnitt.typ                 ← Cross-cutting anchors table
 ```
 
 **Separation of concerns:**
 
-- `template.typ` — _never touch this for content changes_. Edit only for layout adjustments.
-- `main.typ` — update your name, affiliation, and email once, then leave it.
-- `chapters/*.typ` — all your writing lives here, one file per thematic block.
-- `refs.bib` — add references here; they are picked up automatically.
+- `template.typ` — page setup, fonts, the `de`/`CH` locale, and the reusable
+  `anchor-table` / `cross-table` builders. Edit only for layout adjustments.
+- `main.typ` — document metadata (title, abstract, author) and the include stream.
+- `chapters/*.typ` — prose, one file per thematic block; each chapter `#include`s its tables.
+- `tables/*.typ` — one file per table, built with the shared table builders from `template.typ`.
+- `refs.bib` — curated references; rendered as a full bibliography (`full: true`).
 
 ---
 
@@ -231,17 +242,17 @@ git commit -m "docs(ch6): add competency shift reflection — before/after contr
 
 ## Chapter Guide
 
-| File | Covers | BFH Emphasis |
+| File | Covers | Tables included |
 |---|---|---|
-| `01_intro_context.typ` | Objective, case study, TOGAF/ArchiMate framing, EAM theory | Sets the academic frame |
-| `02_customer_journey.typ` | Persona, touchpoints, pain points, collaborative synthesis | Praxis-Transfer evidence |
-| `03_ea_realization.typ` | Capability mapping, application layer, technical debt, target state | Architectural rigor |
-| `04_learning_path.typ` | **Critical reflection**, competency shift, conclusion | **Primary grading criterion** |
+| `01_konzept.typ` | Concept of Semantic Anchors, worked example, quality criteria | — |
+| `02_modul_anchors.typ` | Anchors mapped to CAS modules 1–8, with intros per module | `tables/modul_01_02.typ` … `modul_08.typ` |
+| `03_querschnitt_anchors.typ` | Cross-cutting anchors used across modules | `tables/querschnitt.typ` |
+| `04_anwendung.typ` | How to use anchors in prompts, combining anchors, the Lernbericht; further resources | — |
 
-> **BFH grading note:** Chapter 6 (_Methodological Reflection_) carries the highest academic
-> weight. BFH reviewers look for critical evaluation — not description of what was done, but
-> honest analysis of *how well the methods worked* and *how your thinking changed*.
-> Write this chapter last, after the rest is complete.
+> **Adding a module table:** create a new file under `tables/`, `#import` the
+> `anchor-table` builder from `../template.typ`, supply four cells per row
+> (Anchor · Schlüsselautoren · Aktivierte Konzepte · Anwendung im CAS), attach a
+> `<tbl-…>` label, then `#include` it from the relevant chapter.
 
 ---
 

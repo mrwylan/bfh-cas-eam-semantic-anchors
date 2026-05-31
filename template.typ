@@ -14,8 +14,8 @@
     header: align(right, text(size: 8.5pt, fill: luma(100), title))
   )
 
-  // Typography layout
-  set text(font: "Linux Libertine", size: 11pt, lang: "en")
+  // Typography layout — German, Swiss notation (no ß, « » guillemets)
+  set text(font: "Linux Libertine", size: 11pt, lang: "de", region: "CH")
   set par(justify: true, leading: 0.65em)
   set heading(numbering: "1.1.")
 
@@ -65,3 +65,47 @@
 
   body
 }
+
+// ── Reusable Table Builders ─────────────────────────────────────────────────
+// Shared layout for the module anchor tables. Each row supplies four cells:
+// Anchor · Schlüsselautoren · Aktivierte Konzepte · Anwendung im CAS.
+#let anchor-table(caption, ..rows) = figure(
+  caption: caption,
+  kind: table,
+  block(width: 100%, breakable: true)[
+    #set text(size: 8pt)
+    #set par(justify: false, leading: 0.5em)
+    #table(
+      columns: (2.7cm, 2.5cm, 1fr, 1fr),
+      inset: 5pt,
+      stroke: 0.4pt,
+      fill: (_, y) => if y == 0 { luma(210) } else if calc.odd(y) { luma(248) } else { white },
+      align: (left + top, left + top, left + top, left + top),
+      table.header(
+        [*Anchor*], [*Schlüsselautoren*], [*Aktivierte Konzepte*], [*Anwendung im CAS*],
+      ),
+      ..rows,
+    )
+  ],
+)
+
+// Shared layout for the cross-cutting (Querschnitt) table: three columns.
+#let cross-table(caption, ..rows) = figure(
+  caption: caption,
+  kind: table,
+  block(width: 100%, breakable: true)[
+    #set text(size: 8.5pt)
+    #set par(justify: false, leading: 0.5em)
+    #table(
+      columns: (3cm, 1fr, 1fr),
+      inset: 6pt,
+      stroke: 0.4pt,
+      fill: (_, y) => if y == 0 { luma(210) } else if calc.odd(y) { luma(248) } else { white },
+      align: (left + top, left + top, left + top),
+      table.header(
+        [*Anchor*], [*Kernaussage*], [*Typische Einsatzszenarien*],
+      ),
+      ..rows,
+    )
+  ],
+)

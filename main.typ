@@ -1,32 +1,32 @@
 #import "template.typ": conf
 
 #show: conf.with(
-  title: "Learning Path Documentation: Enterprise Architecture Management in Practice",
-  subtitle: "Connecting Customer Journeys to Capabilities and Application Landscapes",
-  date: "BFH CAS Enterprise Architecture Management (EAM), 2026",
+  title: "Semantic Anchors für Enterprise Architecture Management",
+  subtitle: "Etablierte Fachbegriffe als präzise Referenzpunkte in der Kommunikation mit Large Language Models",
+  date: "Referenzdokument zum CAS Enterprise Architecture Management, BFH — Version 1.0, 2026",
   abstract: [
-    This document serves a dual purpose: it presents the architectural artifact developed
-    during the collaborative phase of the CAS EAM program, and it traces the individual
-    learning path of the author throughout the course.
-    Anchored in the Outside-In paradigm, the work maps a concrete customer journey down
-    through Business Capability Management to the underlying application and data landscape.
-    The final chapters provide a critical methodological reflection and an honest account
-    of the competency shift achieved during the program.
+    Semantic Anchors sind etablierte Fachbegriffe, Methodologien und Frameworks,
+    die als präzise Referenzpunkte in der Kommunikation mit Large Language Models
+    dienen. Statt umständlicher Erklärungen aktiviert ein einzelner, wohldefinierter
+    Begriff ein ganzes Netzwerk an zugehörigem Wissen im Modell. Dieses Referenzdokument
+    ordnet die Anchors den acht Modulen des CAS Enterprise Architecture Management zu,
+    dokumentiert ihre Schlüsselautoren und aktivierten Konzepte und gibt Hinweise zu
+    ihrem Einsatz in Prompts und im Lernbericht.
   ],
   authors: (
     (
-      name: "Jakob Albrecht",
+      name: "mrwylan",
       affiliation: "BFH CAS Enterprise Architecture Management",
-      email: "jakob.albrecht@students.bfh.ch"
+      email: "mrwylan@gmail.com"
     ),
   ),
 )
 
-// ── Chapter Stream ──────────────────────────────────────────────────────────
-#include "chapters/01_intro_context.typ"
-#include "chapters/02_customer_journey.typ"
-#include "chapters/03_ea_realization.typ"
-#include "chapters/04_learning_path.typ"
+// ── Kapitel-Stream ──────────────────────────────────────────────────────────
+#include "chapters/01_konzept.typ"
+#include "chapters/02_modul_anchors.typ"
+#include "chapters/03_querschnitt_anchors.typ"
+#include "chapters/04_anwendung.typ"
 
-// ── References ──────────────────────────────────────────────────────────────
-#bibliography("refs.bib", style: "ieee", title: "References")
+// ── Literaturverzeichnis ────────────────────────────────────────────────────
+#bibliography("refs.bib", style: "ieee", title: "Literaturverzeichnis", full: true)
