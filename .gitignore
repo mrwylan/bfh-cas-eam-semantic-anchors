@@ -1,0 +1,7 @@
+# Typst Output
+*.pdf
+
+# IDE and System Files
+.DS_Store
+.vscode/
+.idea/
