@@ -21,6 +21,13 @@
 
   // Show rules for clean heading layouts
   show heading: it => block(above: 1.5em, below: 1em, it)
+  // Every top-level heading (chapters and the bibliography) starts on a new page.
+  // `weak: true` suppresses the break when a heading already sits at the top of
+  // a page (e.g. the first chapter right after the table of contents).
+  show heading.where(level: 1): it => {
+    pagebreak(weak: true)
+    it
+  }
 
   // Title Block
   align(center)[

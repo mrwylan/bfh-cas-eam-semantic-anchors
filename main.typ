@@ -29,5 +29,5 @@
 #include "chapters/04_anwendung.typ"
 
 // ── Literaturverzeichnis ────────────────────────────────────────────────────
-#pagebreak()
+// Der Seitenumbruch erfolgt automatisch über die Heading-Regel in template.typ.
 #bibliography("refs.bib", style: "ieee", title: "Literaturverzeichnis", full: true)
