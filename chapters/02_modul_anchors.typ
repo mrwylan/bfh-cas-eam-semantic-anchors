@@ -2,7 +2,13 @@
 
 = Semantic Anchors nach CAS-Modulen
 
-Die folgenden Abschnitte ordnen die Semantic Anchors den acht Modulen des CAS Enterprise Architecture Management zu.
+Die Arbeit orientiert sich strukturell an den vier inhaltlichen Modulen des CAS Enterprise Architecture Management (EA, AE, AO, ISA) gemäss @jarchow2026studienplan[S. 5].
+Diese vier Kompetenzmodule bilden das verbindliche curriculare Gerüst des Programms.
+
+Die nachfolgende Gliederung in acht Blöcke entfaltet dieses Gerüst entlang der didaktischen Abfolge des Unterrichts: Den vier Kompetenzmodulen — Enterprise Architektur (EA, Modul 4), Architektur Evolution (AE, Modul 5), Ablauforganisation (AO, Modul 6) und Information Systems Architektur (ISA, Modul 7) — sind eine einführende Grundlagenphase (Modul 1–3) sowie ein abschliessender Ausblick auf aktuelle Themen (Modul 8) vor- und nachgelagert.
+Die acht Blöcke sind somit keine eigenständige Taxonomie, sondern die feinere, operative Schicht über den vier Modulen des Studienplans.
+
+Die folgenden Abschnitte ordnen die Semantic Anchors diesen acht Blöcken zu.
 Jede Tabelle dokumentiert pro Anchor die Schlüsselautoren, die aktivierten Konzepte und die konkrete Anwendung im CAS.
 Die Tabellen sind in eigenen Dateien unter `tables/` abgelegt und werden hier eingebunden.
 
