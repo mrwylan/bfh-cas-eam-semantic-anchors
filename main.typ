@@ -29,4 +29,5 @@
 #include "chapters/04_anwendung.typ"
 
 // ── Literaturverzeichnis ────────────────────────────────────────────────────
+#pagebreak()
 #bibliography("refs.bib", style: "ieee", title: "Literaturverzeichnis", full: true)
