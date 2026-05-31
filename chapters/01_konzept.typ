@@ -14,9 +14,15 @@ Der zugrunde liegende Katalog wird von der LLM-Coding Community gepflegt @semant
 
 Ein guter Semantic Anchor erfüllt vier Kriterien:
 
-/ Precise: Verweist auf einen spezifischen, etablierten Wissenskorpus.
-/ Rich: Aktiviert mehrere vernetzte Konzepte gleichzeitig.
-/ Consistent: Verschiedene LLMs liefern eine ähnliche konzeptuelle Aktivierung.
-/ Attributable: Rückverfolgbar zu Schlüsselautoren oder Publikationen.
+#table(
+  columns: (auto, 1fr),
+  inset: (x: 8pt, y: 6pt),
+  stroke: none,
+  align: (left + top, left + top),
+  [*Precise*],      [Verweist auf einen spezifischen, etablierten Wissenskorpus.],
+  [*Rich*],         [Aktiviert mehrere vernetzte Konzepte gleichzeitig.],
+  [*Consistent*],   [Verschiedene LLMs liefern eine ähnliche konzeptuelle Aktivierung.],
+  [*Attributable*], [Rückverfolgbar zu Schlüsselautoren oder Publikationen.],
+)
 
 Diese vier Kriterien sind zugleich der rote Faden der folgenden Kapitel: Jeder Anchor wird mit seinen Schlüsselautoren (_Attributable_), den aktivierten Konzepten (_Rich_) und seiner konkreten Anwendung im CAS dokumentiert.
