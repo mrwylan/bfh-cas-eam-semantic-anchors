@@ -15,7 +15,7 @@
         [*Tool*], [*Funktionsart*], [*Umfang*], [*Verwendung*],
       ),
 
-      [Claude (Anthropic, Modell claude-sonnet-4 / claude-opus-4)],
+      [Claude (Anthropic), Modelle Claude Opus 4.8 und Claude Sonnet 4.6],
       [KI-generierter Text, durch Autor überarbeitet und validiert],
       [Alle Texte der Arbeit],
       [Ersterstellung von Textpassagen mittels gezieltem Prompting; sämtliche Ausgaben durch den Autor gelesen, inhaltlich geprüft und bei Bedarf angepasst],
