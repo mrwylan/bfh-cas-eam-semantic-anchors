@@ -31,3 +31,6 @@
 // ── Literaturverzeichnis ────────────────────────────────────────────────────
 // Der Seitenumbruch erfolgt automatisch über die Heading-Regel in template.typ.
 #bibliography("refs.bib", style: "ieee", title: "Literaturverzeichnis", full: true)
+
+// ── Anhang ──────────────────────────────────────────────────────────────────
+#include "chapters/05_anhang_ki.typ"
