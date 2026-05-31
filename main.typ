@@ -3,7 +3,7 @@
 #show: conf.with(
   title: "Semantic Anchors für Enterprise Architecture Management",
   subtitle: "Etablierte Fachbegriffe als präzise Referenzpunkte in der Kommunikation mit Large Language Models",
-  date: "Referenzdokument zum CAS Enterprise Architecture Management, BFH — Version 1.0, 2026",
+  date: "Referenzdokument zum CAS Enterprise Architecture Management, BFH Bern — Version 1.0, 2026",
   abstract: [
     Semantic Anchors sind etablierte Fachbegriffe, Methodologien und Frameworks,
     die als präzise Referenzpunkte in der Kommunikation mit Large Language Models
@@ -15,9 +15,9 @@
   ],
   authors: (
     (
-      name: "mrwylan",
+      name: "Jakob Albrecht",
       affiliation: "BFH CAS Enterprise Architecture Management",
-      email: "mrwylan@gmail.com"
+      email: "jakob.albrecht@students.bfh.ch"
     ),
   ),
 )
