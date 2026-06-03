@@ -132,9 +132,9 @@ extension for live preview, syntax highlighting, and autocompletion.
 │   ├── 01_konzept.typ              ← Ch. 1 Konzept + Qualitätskriterien
 │   ├── 02_modul_anchors.typ        ← Ch. 2 Semantic Anchors nach CAS-Modulen (1–8)
 │   ├── 03_querschnitt_anchors.typ  ← Ch. 3 Querschnitts-Anchors
-│   ├── 04_anwendung.typ            ← Ch. 4 Anwendungshinweise + Weiterführende Ressourcen
-│   ├── 05_anhang_diagramme.typ     ← Anhang A Textbasierte Diagramme (Tools & Agenten)
-│   └── 06_anhang_ki.typ            ← Anhang B KI-gestützte Tools + Selbständigkeitserklärung
+│   ├── 04_diagramme.typ            ← Ch. 4 Textbasierte Diagramme (Tools & Agenten)
+│   ├── 05_anwendung.typ            ← Ch. 5 Anwendungshinweise + Weiterführende Ressourcen
+│   └── 06_anhang_ki.typ            ← Anhang A KI-gestützte Tools + Selbständigkeitserklärung
 └── tables/
     ├── modul_01_02.typ … modul_08.typ  ← One anchor table per CAS module
     ├── querschnitt.typ                 ← Cross-cutting anchors table
@@ -251,9 +251,9 @@ git commit -m "docs(ch6): add competency shift reflection — before/after contr
 | `01_konzept.typ` | Concept of Semantic Anchors, worked example, quality criteria | — |
 | `02_modul_anchors.typ` | Anchors mapped to CAS modules 1–8, with intros per module | `tables/modul_01_02.typ` … `modul_08.typ` |
 | `03_querschnitt_anchors.typ` | Cross-cutting anchors used across modules | `tables/querschnitt.typ` |
-| `04_anwendung.typ` | How to use anchors in prompts, combining anchors, the Lernbericht; further resources | — |
-| `05_anhang_diagramme.typ` | Appendix A: text-based diagrams as anchors (PlantUML/Mermaid/SVG), tools & agents | `tables/diagramme_vergleich.typ` |
-| `06_anhang_ki.typ` | Appendix B: AI-assisted tools used + declaration of authorship | `tables/ki_tools.typ` |
+| `04_diagramme.typ` | Ch. 4: text-based diagrams as anchors (PlantUML/Mermaid/SVG), tools & agents | `tables/diagramme_vergleich.typ` |
+| `05_anwendung.typ` | How to use anchors in prompts (incl. diagram-generating prompts), combining anchors, the Lernbericht; further resources | — |
+| `06_anhang_ki.typ` | Appendix A: AI-assisted tools used + declaration of authorship | `tables/ki_tools.typ` |
 
 > **Adding a module table:** create a new file under `tables/`, `#import` the
 > `anchor-table` builder from `../template.typ`, supply four cells per row

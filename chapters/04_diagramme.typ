@@ -1,13 +1,9 @@
-// ── Anhang: Textbasierte Diagramme als Semantic Anchors ─────────────────────
-// Erster Anhang nach dem Literaturverzeichnis. Hier wird die Anhang-Nummerierung
-// (A, B, …) gesetzt und der Heading-Zähler zurückgesetzt; nachfolgende Anhänge
-// (06_anhang_ki.typ) führen den Zähler fort. Die allgemeine Pagebreak-Regel aus
-// template.typ setzt den Anhang automatisch auf eine neue Seite.
+// ── Kapitel 4: Textbasierte Diagramme als Semantic Anchors ──────────────────
+// Reguläres Kapitel (1.1-Nummerierung aus template.typ). Steht bewusst vor dem
+// Anwendungskapitel, da die dortigen Prompt-Beispiele die hier eingeführten
+// Diagrammsprachen aufgreifen.
 
-#set heading(numbering: "A.1.")
-#counter(heading).update(0)
-
-= Anhang: Textbasierte Diagramme als Semantic Anchors — Tools und Agenten
+= Textbasierte Diagramme als Semantic Anchors — Tools und Agenten
 
 Die in den vorangehenden Kapiteln beschriebenen Semantic Anchors verweisen auf Frameworks und Methodologien.
 Das Prinzip lässt sich jedoch auch auf eine zweite Klasse von Referenzpunkten übertragen: auf *textbasierte Diagrammsprachen*.

@@ -1,4 +1,4 @@
-// ── Kapitel 4: Anwendungshinweise ───────────────────────────────────────────
+// ── Kapitel 5: Anwendungshinweise ───────────────────────────────────────────
 
 = Anwendungshinweise
 
@@ -37,6 +37,72 @@ Dadurch wird der Kontext präzise eingegrenzt:
 #quote(block: true)[
   «Entwickle eine Migrationsstrategie (Architecture Roadmapping, TOGAF Phase E–F) für eine Applikationslandschaft, die ich mit dem TIME Model bewertet habe. Berücksichtige dabei Technical Debt nach dem Cunningham/Fowler-Modell und zeige die Ergebnisse als ArchiMate Migration Viewpoint.»
 ]
+
+== Diagramme als Code erzeugen
+
+Wie im Kapitel zu textbasierten Diagrammen gezeigt, sind auch die Diagrammsprachen selbst Semantic Anchors: Der Anchor *«PlantUML»*, *«Mermaid»* oder *«SVG»* aktiviert die zugehörige Syntax, sodass aus einer fachlichen Beschreibung unmittelbar valider, versionierbarer Diagrammcode entsteht (@tbl-diagramme-vergleich).
+Die folgenden Prompts zeigen je ein Beispiel mit dem vorgestellten Textsyntax eines Formats.
+
+*PlantUML — Sequenzdiagramm einer Architektur-Freigabe (TOGAF ADM Phase G):*
+#quote(block: true)[
+  «Erzeuge als PlantUML-Sequenzdiagramm die Architektur-Freigabe nach TOGAF ADM Phase G zwischen Architekt, Architecture Board und Projektteam.»
+]
+#block(width: 100%, inset: 8pt, radius: 4pt, stroke: 0.4pt, fill: luma(250))[
+  #set text(size: 8.5pt)
+  ```plantuml
+  @startuml
+  actor Architekt
+  participant "Architecture Board" as Board
+  participant Projektteam
+  Architekt -> Board: Architektur-Vorschlag
+  Board -> Board: Konformitätsprüfung
+  Board --> Architekt: Freigabe mit Auflagen
+  Architekt -> Projektteam: Architecture Contract
+  @enduml
+  ```
+]
+
+*Mermaid — Flowchart des TOGAF ADM-Zyklus:*
+#quote(block: true)[
+  «Stelle den TOGAF ADM-Zyklus (Phasen A bis H) als Mermaid-Flowchart dar.»
+]
+#block(width: 100%, inset: 8pt, radius: 4pt, stroke: 0.4pt, fill: luma(250))[
+  #set text(size: 8.5pt)
+  ```mermaid
+  flowchart TD
+    A[A: Architecture Vision] --> B[B: Business]
+    B --> C[C: Information Systems]
+    C --> D[D: Technology]
+    D --> E[E: Opportunities & Solutions]
+    E --> F[F: Migration Planning]
+    F --> G[G: Implementation Governance]
+    G --> H[H: Architecture Change Mgmt]
+    H --> A
+  ```
+]
+
+*SVG — dreischichtiges ArchiMate-Schema:*
+#quote(block: true)[
+  «Zeichne als SVG ein dreischichtiges ArchiMate-Schema mit je einem Block für Business, Application und Technology.»
+]
+#block(width: 100%, inset: 8pt, radius: 4pt, stroke: 0.4pt, fill: luma(250))[
+  #set text(size: 8.5pt)
+  ```xml
+  <svg xmlns="http://www.w3.org/2000/svg" width="240" height="150">
+    <rect x="10" y="10"  width="220" height="40"
+          fill="#fff5cc" stroke="#000"/>
+    <text x="120" y="35" text-anchor="middle">Business</text>
+    <rect x="10" y="55"  width="220" height="40"
+          fill="#cce5ff" stroke="#000"/>
+    <text x="120" y="80" text-anchor="middle">Application</text>
+    <rect x="10" y="100" width="220" height="40"
+          fill="#d5f5e3" stroke="#000"/>
+    <text x="120" y="125" text-anchor="middle">Technology</text>
+  </svg>
+  ```
+]
+
+Der erzeugte Code kann direkt in die Dokumentation übernommen, gerendert und – wie jedes andere Artefakt – versioniert und im Review nachvollzogen werden.
 
 == Im Lernbericht einsetzen
 

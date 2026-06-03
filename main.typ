@@ -26,15 +26,13 @@
 #include "chapters/01_konzept.typ"
 #include "chapters/02_modul_anchors.typ"
 #include "chapters/03_querschnitt_anchors.typ"
-#include "chapters/04_anwendung.typ"
+#include "chapters/04_diagramme.typ"
+#include "chapters/05_anwendung.typ"
 
 // ── Literaturverzeichnis ────────────────────────────────────────────────────
 // Der Seitenumbruch erfolgt automatisch über die Heading-Regel in template.typ.
 #bibliography("refs.bib", style: "ieee", title: "Literaturverzeichnis", full: true)
 
 // ── Anhang ──────────────────────────────────────────────────────────────────
-// Anhang A: Textbasierte Diagramme als Semantic Anchors (Tools und Agenten).
-// Anhang B: Verwendung von KI-gestützten Tools (mit Selbständigkeitserklärung) —
-//           bewusst als letzter Abschnitt, damit die Erklärung das Dokument abschliesst.
-#include "chapters/05_anhang_diagramme.typ"
+// Anhang A: Verwendung von KI-gestützten Tools (mit Selbständigkeitserklärung).
 #include "chapters/06_anhang_ki.typ"
