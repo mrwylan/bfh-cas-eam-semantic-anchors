@@ -1,10 +1,12 @@
 // ── Anhang: Verwendung von KI-gestützten Tools ──────────────────────────────
-// Der Anhang steht nach dem Literaturverzeichnis. Die Heading-Nummerierung wird
-// auf das Anhang-Schema (A, A.1, …) umgestellt; die allgemeine Pagebreak-Regel
-// aus template.typ setzt den Anhang automatisch auf eine neue Seite.
+// Zweiter Anhang nach dem Literaturverzeichnis. Die Anhang-Nummerierung (A, B, …)
+// muss erneut gesetzt werden, da `#set`-Regeln aus einer eingebundenen Datei
+// (05_anhang_diagramme.typ) nicht auf nachfolgende Includes übergreifen. Der
+// Heading-Zähler ist hingegen globaler Dokumentzustand und wird NICHT zurück-
+// gesetzt, sodass dieser Anhang den Zähler fortführt und als «Anhang B»
+// erscheint. Die Pagebreak-Regel aus template.typ setzt ihn auf eine neue Seite.
 
 #set heading(numbering: "A.1.")
-#counter(heading).update(0)
 
 = Anhang: Verwendung von KI-gestützten Tools
 
