@@ -132,13 +132,14 @@ extension for live preview, syntax highlighting, and autocompletion.
 │   ├── 01_konzept.typ              ← Ch. 1 Konzept + Qualitätskriterien
 │   ├── 02_modul_anchors.typ        ← Ch. 2 Semantic Anchors nach CAS-Modulen (1–8)
 │   ├── 03_querschnitt_anchors.typ  ← Ch. 3 Querschnitts-Anchors
-│   ├── 04_diagramme.typ            ← Ch. 4 Textbasierte Diagramme (Tools & Agenten)
+│   ├── 04_diagramme.typ            ← Ch. 4 Visualisierung & Diagramme (Diagrammsprachen + Grammar of Graphics)
 │   ├── 05_anwendung.typ            ← Ch. 5 Anwendungshinweise + Weiterführende Ressourcen
 │   └── 06_anhang_ki.typ            ← Anhang A KI-gestützte Tools + Selbständigkeitserklärung
 └── tables/
     ├── modul_01_02.typ … modul_08.typ  ← One anchor table per CAS module
     ├── querschnitt.typ                 ← Cross-cutting anchors table
     ├── diagramme_vergleich.typ         ← PlantUML vs. Mermaid comparison
+    ├── visualisierung.typ              ← Grammar-of-Graphics anchors (Wilkinson/Wickham)
     └── ki_tools.typ                    ← AI-assisted tools used
 ```
 
@@ -251,7 +252,7 @@ git commit -m "docs(ch6): add competency shift reflection — before/after contr
 | `01_konzept.typ` | Concept of Semantic Anchors, worked example, quality criteria | — |
 | `02_modul_anchors.typ` | Anchors mapped to CAS modules 1–8, with intros per module | `tables/modul_01_02.typ` … `modul_08.typ` |
 | `03_querschnitt_anchors.typ` | Cross-cutting anchors used across modules | `tables/querschnitt.typ` |
-| `04_diagramme.typ` | Ch. 4: text-based diagrams as anchors (PlantUML/Mermaid/SVG), tools & agents | `tables/diagramme_vergleich.typ` |
+| `04_diagramme.typ` | Ch. 4: visualization as a core EA task — text-based diagram languages (PlantUML/Mermaid/SVG) and the Grammar of Graphics (Wilkinson/Wickham) as anchors | `tables/diagramme_vergleich.typ`, `tables/visualisierung.typ` |
 | `05_anwendung.typ` | How to use anchors in prompts (incl. diagram-generating prompts), combining anchors, the Lernbericht; further resources | — |
 | `06_anhang_ki.typ` | Appendix A: AI-assisted tools used + declaration of authorship | `tables/ki_tools.typ` |
 
