@@ -33,4 +33,8 @@
 #bibliography("refs.bib", style: "ieee", title: "Literaturverzeichnis", full: true)
 
 // ── Anhang ──────────────────────────────────────────────────────────────────
-#include "chapters/05_anhang_ki.typ"
+// Anhang A: Textbasierte Diagramme als Semantic Anchors (Tools und Agenten).
+// Anhang B: Verwendung von KI-gestützten Tools (mit Selbständigkeitserklärung) —
+//           bewusst als letzter Abschnitt, damit die Erklärung das Dokument abschliesst.
+#include "chapters/05_anhang_diagramme.typ"
+#include "chapters/06_anhang_ki.typ"
