@@ -61,7 +61,7 @@ Das Modell reagiert nicht mit einer Fehlermeldung, sondern mit einer von drei Fe
   [*Konfabulation*], [Das Modell _erfindet_ eine in sich schlüssige, aber fiktive Beschreibung des Begriffs — inklusive erfundener Prinzipien und Autorenzuschreibungen. Ohne Domänenwissen oder Quellenabgleich nicht als Fälschung erkennbar.],
 )
 
-Für den Praktiker bedeutet dies: Bevor ein Anchor in Prompts, Lernberichten oder Agent-Skills produktiv eingesetzt wird, sollte seine tatsächliche Aktivierungswirkung an den konkret verwendeten Modellen getestet werden.
+Für den Praktiker bedeutet dies: Bevor ein Anchor in Prompts, Lernberichten oder Agenten-Skills produktiv eingesetzt wird, sollte seine tatsächliche Aktivierungswirkung an den konkret verwendeten Modellen getestet werden.
 Das einfachste Verfahren ist ein Vorher-Nachher-Vergleich: Dieselbe Aufgabenstellung einmal mit und einmal ohne den Anchor ausführen und die Struktur der Antwort vergleichen.
 Verändert der Anchor die Struktur nicht messbar, ist der Prior für dieses Modell zu schwach — der Begriff gehört dann in einen expliziten _Contract_ (eine mitgelieferte Definition), nicht in einen Anchor @semantic_anchors_training_data.
 
