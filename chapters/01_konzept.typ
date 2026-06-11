@@ -56,7 +56,7 @@ Das Modell reagiert nicht mit einer Fehlermeldung, sondern mit einer von drei Fe
   stroke: 0.4pt,
   align: (left + top, left + top),
   table.header([*Fehlerform*], [*Beschreibung*]),
-  [*Transparente Substitution*], [Das Modell erkennt die Wissenslücke und signalisiert sie («Ich bin nicht sicher, was genau Sie mit … meinen»). Der sicherste Fall — der Anwender weiss, dass der Anchor nicht gezündet hat.],
+  [*Transparente Substitution*], [Das Modell erkennt die Wissenslücke und signalisiert sie («Ich bin nicht sicher, was genau mit … gemeint ist.»). Der sicherste Fall — der Anwender weiss, dass der Anchor nicht gezündet hat.],
   [*Stille Substitution*], [Das Modell liefert unter dem angeforderten Begriff Inhalte, die einem älteren oder verwandten Konzept entstammen — ohne Hinweis. Die Ausgabe sieht korrekt aus, ist es aber nicht.],
   [*Konfabulation*], [Das Modell _erfindet_ eine in sich schlüssige, aber fiktive Beschreibung des Begriffs — inklusive erfundener Prinzipien und Autorenzuschreibungen. Ohne Domänenwissen oder Quellenabgleich nicht als Fälschung erkennbar.],
 )
