@@ -10,7 +10,6 @@ Die acht Blöcke sind somit keine eigenständige Taxonomie, sondern die feinere,
 
 Die folgenden Abschnitte ordnen die Semantic Anchors diesen acht Blöcken zu.
 Jede Tabelle dokumentiert pro Anchor die Schlüsselautoren, die aktivierten Konzepte und die konkrete Anwendung im CAS.
-Die Tabellen sind in eigenen Dateien unter `tables/` abgelegt und werden hier eingebunden.
 
 == Modul 1–2: Einführung & Unternehmen digitalisieren
 
