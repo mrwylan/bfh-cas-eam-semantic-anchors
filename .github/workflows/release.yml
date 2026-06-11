@@ -36,7 +36,7 @@ jobs:
 
       - name: Compile PDF
         run: |
-          typst compile main.typ "bfh-cas-eam-${{ steps.version.outputs.tag }}.pdf" \
+          typst compile main.typ "bfh-cas-eam-semantic-anchors-v${{ steps.version.outputs.number }}.pdf" \
             --input version=${{ steps.version.outputs.number }} \
             --input year=${{ steps.version.outputs.year }}
 
@@ -59,12 +59,12 @@ jobs:
           tag_name: ${{ steps.version.outputs.tag }}
           name: "Release ${{ steps.version.outputs.tag }}"
           body: |
-            ## BFH CAS EAM — Learning Path Documentation ${{ steps.version.outputs.tag }}
+            ## BFH CAS EAM — Semantic Anchors v${{ steps.version.outputs.number }}
 
             ### Changes
             ${{ steps.changelog.outputs.log }}
 
             ---
             Compiled with Typst 0.11.1 · [CI run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
-          files: "bfh-cas-eam-${{ steps.version.outputs.tag }}.pdf"
+          files: "bfh-cas-eam-semantic-anchors-v${{ steps.version.outputs.number }}.pdf"
           fail_on_unmatched_files: true
