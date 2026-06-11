@@ -1,9 +1,16 @@
 #import "template.typ": conf
 
+// Version und Jahr werden beim Kompilieren von aussen gesetzt:
+//   typst compile main.typ --input version=1.0 --input year=2026
+// Ohne --input (lokale Builds) greifen die Fallbacks: «dev» und das aktuelle Jahr.
+#let doc-version = sys.inputs.at("version", default: "dev")
+#let doc-year = sys.inputs.at("year", default: str(datetime.today().year()))
+
 #show: conf.with(
   title: "Semantic Anchors für Enterprise Architecture Management",
   subtitle: "Etablierte Fachbegriffe als präzise Referenzpunkte in der Kommunikation mit Large Language Models",
-  date: "Referenzdokument zum CAS Enterprise Architecture Management, BFH Bern — Version 1.0, 2026",
+  date: "Referenzdokument zum CAS Enterprise Architecture Management, BFH Bern — Version "
+    + doc-version + ", " + doc-year,
   abstract: [
     Semantic Anchors sind etablierte Fachbegriffe, Methodologien und Frameworks,
     die als präzise Referenzpunkte in der Kommunikation mit Large Language Models
