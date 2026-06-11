@@ -76,3 +76,87 @@ Mit jeder neuen Trainingsgeneration verschiebt sich die Dichte der Trainingsdate
 )[
   Die Praktikabilität eines Anchors ist damit keine Eigenschaft des Begriffs, sondern eine Eigenschaft des _Begriffs zu einem bestimmten Zeitpunkt, für ein bestimmtes Modell_.
 ]
+
+== Kapazitätsrelativität: Dekompression für schwache Modelle
+
+Aus der vorigen Beobachtung folgt der für die Praxis entscheidende Punkt: Ein Anchor ist _kapazitätsrelativ_.
+Bei einem starken Modell genügt der Name plus ein dünner Zeiger, weil das Modell die zugrunde liegende Logik latent enthält und selbst entfaltet.
+Die gesamte Kompressionsleistung des Anchors funktioniert nur unter dieser Annahme.
+Ein schwaches Modell enthält die Unterscheidung nicht zuverlässig — der Anchor muss daher vollständig _dekomprimiert_ werden: nicht als Beschreibung, sondern als ausführbares Mikro-Programm mit Test, Beispiel und Fehlermodus-Sperre.
+
+Als durchgängiges Beispiel dient der Anchor *«Digital Transformation, Westerman et al.»* (@tbl-modul-01-02) und seine Kernunterscheidung zwischen _Digitalisierung_ (gleicher Wert, anderer Kanal) und echter _Transformation_ (Veränderung von Angebot, Kundschaft oder Wertlogik) @westerman2014.
+Bei einem starken Modell genügt der Anchor-Name.
+Bei einem schwachen Modell stoppt das Modell bei der naheliegenden Digitalisierungs-Lesart und übersieht die Transformation.
+
+=== Die vier Hebel für ein schwaches Modell
+
+#table(
+  columns: (auto, 1fr),
+  inset: (x: 8pt, y: 6pt),
+  stroke: 0.4pt,
+  align: (left + top, left + top),
+  table.header([*Hebel*], [*Wirkung*]),
+  [*1. Diskriminator operationalisieren*],
+  [Nicht «radikale Verbesserung von Reichweite» (zu abstrakt, das Modell halluziniert), sondern ein mechanischer Test: Ändert sich WAS angeboten wird, WER bedient wird, oder WIE Wert/Erlös entsteht? Nein zu allen dreien = Digitalisierung.],
+  [*2. Beide Lesarten erzwingen*],
+  [Der zentrale Trick. Ein schwaches Modell stoppt bei der ersten, naheliegenden (Digitalisierungs-)Lesart. Das Erzeugen _beider_ Lesarten wird zum Pflichtschritt, bevor klassifiziert wird.],
+  [*3. Die Falle als harte Regel benennen*],
+  [«Kanalsubstitution ist keine Transformation. Wenn deine Antwort nur das beschreibt, hast du die Aufgabe nicht gelöst.»],
+  [*4. Ausgabeformat fixieren und Few-Shot mitgeben*],
+  [Ein einziges kontrastierendes Beispiel mitgeben. Schwache Modelle pattern-matchen — ein festes Format und ein Beispiel lenken dieses Verhalten.],
+)
+
+Diese vier Hebel verwandeln den komprimierten Anchor in einen vollständig ausformulierten Prompt.
+Der folgende Entwurf zeigt das Ergebnis am Westerman-Beispiel:
+
+#block(width: 100%, inset: 8pt, radius: 4pt, stroke: 0.4pt, fill: luma(250))[
+  #set text(size: 8pt)
+  #set par(justify: false, leading: 0.5em)
+  ```text
+  ROLLE: Du prüfst eine einzelne betriebliche Beobachtung auf ihr
+  Veränderungspotenzial.
+
+  HARTE REGEL: Eine reine Kanalsubstitution ist KEINE Transformation.
+  Kanalsubstitution = eine Aufgabe, die bisher per Telefon, Papier oder E-Mail
+  lief, läuft neu über Webformular oder App. Gleiches Angebot, gleiche Kunden,
+  gleiche Wertlogik, nur anderes Medium. Das nennen wir DIGITALISIERUNG.
+  Transformation liegt NUR vor, wenn sich mindestens eines ändert:
+  WAS angeboten wird, WER bedient wird, oder WIE Wert/Erlös entsteht.
+
+  VORGEHEN (alle Schritte, keinen überspringen):
+  1. Beobachtung in einem Satz wiedergeben.
+  2. DIGITALISIERUNGS-LESART: die minimale Lösung, die nur den Kanal ersetzt.
+     Pflicht, auch wenn banal.
+  3. TRANSFORMATIONS-LESART: eine Lösung, bei der sich WAS/WER/WIE ändert.
+     Fällt dir keine ein, schreibe "keine erkennbar" und begründe.
+     Nichts erfinden.
+  4. TEST: Wende auf JEDE Lesart die Frage an: Ändert sich WAS/WER/WIE?
+     Markiere jede Lesart als [Digitalisierung] oder [Transformation].
+  5. ERGEBNIS: eine Zeile. Welche Lesart ist welche, und welche strategische
+     Frage folgt daraus.
+
+  BEISPIEL:
+  Beobachtung: "Lieferanten können Werbeflächen nur telefonisch reservieren."
+  2. Digitalisierung: Online-Buchungsformular mit Verfügbarkeitsanzeige.
+     Telefon wird Web, WAS/WER/WIE unverändert. [Digitalisierung]
+  3. Transformation: Werbeinventar wird Self-Service-Marktplatz mit dynamischen
+     Preisen und Performance-Daten; Werbung wird eigenständige, skalierbare
+     Erlösquelle. WAS (Datenprodukt statt Fixplatz) und WIE (Erlösmodell)
+     ändern sich. [Transformation]
+  5. Ergebnis: Das Formular ist Digitalisierung. Strategische Frage: Wollen wir
+     aus der Werbeflächen-Verwaltung ein Media-Geschäft machen?
+
+  DEINE BEOBACHTUNG:
+  [hier einsetzen]
+  ```
+]
+
+=== Boundary Condition
+
+Bewusst weggelassen sind die Führungsachse (_Fashionista_ aus der Digital-Mastery-Matrix) und die Gestaltungsfelder des Anchors.
+Bei einem schwachen Modell verdünnt jeder zusätzliche Begriff den einen Diskriminator, den es treffen soll.
+Die Frage war «die Kernunterscheidung», also fokussiert der Prompt ausschliesslich darauf.
+Der Ausgang «keine erkennbar, begründe, nichts erfinden» ist dabei das Scheinpräzisions-Prinzip in Promptform: Er verhindert, dass das Modell eine Transformation _fabriziert_, wo keine ist — die Promptform der Konfabulationssperre aus dem vorigen Abschnitt.
+
+Daraus folgt eine Gestaltungsregel für den Anchor-Einsatz an schwachen Modellen: ein _Stark-Anchor_ pro Reasoning-Bündel, aber für schwache Modelle ein _dekomponiertes Set_ einzeln auslösbarer Mikro-Prompts statt eines überladenen.
+Die Führungs- und Domänen-Prüfung gehört dann nicht in denselben Prompt, sondern in separate, nachgelagerte Anchor — die saubere Konsequenz aus der Kapazitätsrelativität.
