@@ -46,7 +46,7 @@ Ein Semantic Anchor _definiert_ keinen Begriff — er aktiviert ein Wissen, das 
 Diese Einsicht hat eine unmittelbare Konsequenz für die praktische Anwendung: Die Wirksamkeit eines Anchors hängt davon ab, wie _dicht_ das Konzept in den Trainingsdaten des LLM repräsentiert ist.
 Das Semantic-Anchors-Projekt hat diese Abhängigkeit in einem reproduzierbaren Experiment systematisch untersucht @semantic_anchors_training_data.
 
-Ein dichter Prior — etwa _«Cockburn Use Cases»_ oder _«TOGAF ADM Cycle»_ — löst zuverlässig das vollständige konzeptuelle Gerüst aus: Akteure, Ziel-Ebenen, Extension Points, Templates.
+Ein dichter Prior (das Vorwissen des Modells über einen Begriff) — etwa _«Cockburn Use Cases»_ oder _«TOGAF ADM Cycle»_ — löst zuverlässig das vollständige konzeptuelle Gerüst aus: Akteure, Ziel-Ebenen, Extension Points, Templates.
 Ein schwacher Prior — getestet wurde _«Use-Case 3.0»_ — hingegen aktiviert _nichts_ Spezifisches.
 Das Modell reagiert nicht mit einer Fehlermeldung, sondern mit einer von drei Fehlerformen, die für den Praktiker unterschiedlich schwer zu erkennen sind:
 
