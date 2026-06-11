@@ -19,6 +19,38 @@ Vom Business Model Canvas @osterwalder2010 über das Strategic Alignment Model @
 
 #include "../tables/modul_01_02.typ"
 
+Bevor diese Anchors in der eigenen Arbeit eingesetzt werden, lohnt sich ein praktischer Selbsttest: Die folgenden Prompts laden dazu ein, die Aktivierungswirkung der Anchors in der _eigenen_ LLM-Umgebung auszukundschaften.
+Jeder Prompt nennt nur den Anchor aus @tbl-modul-01-02 und ein konkretes Szenario — die spezifische konzeptuelle Struktur soll der Anchor selbst auslösen.
+Genau darin liegt der Test: Im Sinne des Vorher-Nachher-Vergleichs (siehe Abschnitt zur Praktikabilität) zeigt sich die Stärke des Priors daran, ob die Antwort das zugehörige Gerüst von sich aus entfaltet — oder nur eine generische Beschreibung liefert.
+
+*Business Model Canvas, Osterwalder:*
+```text
+Wende das Business Model Canvas (Osterwalder) auf einen Blumenladen an der
+Einfahrt zu einer Schnellstrasse an.
+```
+
+*Business-IT Alignment, Henderson & Venkatraman:*
+```text
+Analysiere mit Business-IT Alignment (Henderson & Venkatraman): Das Business
+will eine Cloudlösung und Verkaufsplattform anbieten, die IT betreibt einen
+Webshop auf eigener Infrastruktur mit direkter Anbindung an das ERP-System.
+```
+
+*EA as Strategy, Ross/Weill/Robertson:*
+```text
+Wende EA as Strategy (Ross/Weill/Robertson) an: Ein Blumengrosshändler (B2B)
+zentralisiert und übernimmt eine Kette von Blumenläden, wobei jede Filiale eine
+hohe Autonomie aufweist. Wie sieht die EA aus, welche Optionen für eine
+Strategie sollten erwogen werden?
+```
+
+*Operating Model, MIT CISR:*
+```text
+Wende das Operating Model (MIT CISR) an: Ein Zulieferer für eine Space Mission
+stellt sowohl Drucktanks als auch Einspritzdüsen her, neu sollte auch die
+Automobilindustrie als Kunde gewonnen werden.
+```
+
 == Modul 3: Modellierungssprachen
 
 Modul 3 führt die formalen Notationen ein, mit denen Architektur kommuniziert wird.
