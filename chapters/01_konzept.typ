@@ -67,4 +67,12 @@ Verändert der Anchor die Struktur nicht messbar, ist der Prior für dieses Mode
 
 Diese Grenze ist nicht statisch.
 Mit jeder neuen Trainingsgeneration verschiebt sich die Dichte der Trainingsdaten: Ein Begriff, der heute konfabuliert wird, kann in einer künftigen Modellgeneration zum verlässlichen Anchor werden — sofern der publizierte Korpus entsprechend wächst.
-Die Praktikabilität eines Anchors ist damit keine Eigenschaft des Begriffs, sondern eine Eigenschaft des _Begriffs zu einem bestimmten Zeitpunkt, für ein bestimmtes Modell_.
+
+#box(
+  fill: rgb("ffe0b2"),
+  inset: (x: 8pt, y: 6pt),
+  radius: 4pt,
+  stroke: 0.4pt + rgb("fb8c00"),
+)[
+  Die Praktikabilität eines Anchors ist damit keine Eigenschaft des Begriffs, sondern eine Eigenschaft des _Begriffs zu einem bestimmten Zeitpunkt, für ein bestimmtes Modell_.
+]
