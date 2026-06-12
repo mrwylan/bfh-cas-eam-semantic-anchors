@@ -1,4 +1,5 @@
 // ── Kapitel 1: Konzept ──────────────────────────────────────────────────────
+#import "../template.typ": prompt-box
 
 = Konzept
 
@@ -109,9 +110,7 @@ Bei einem schwachen Modell stoppt das Modell bei der naheliegenden Digitalisieru
 Diese vier Hebel verwandeln den komprimierten Anchor in einen vollständig ausformulierten Prompt.
 Der folgende Entwurf zeigt das Ergebnis am Westerman-Beispiel:
 
-#block(width: 100%, inset: 8pt, radius: 4pt, stroke: 0.4pt, fill: luma(250))[
-  #set text(size: 8pt)
-  #set par(justify: false, leading: 0.5em)
+#prompt-box[
   ```text
   ROLLE: Du prüfst eine einzelne betriebliche Beobachtung auf ihr
   Veränderungspotenzial.

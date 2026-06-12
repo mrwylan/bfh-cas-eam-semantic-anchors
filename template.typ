@@ -73,6 +73,20 @@
   body
 }
 
+// ── Reusable Prompt Box ─────────────────────────────────────────────────────
+// Uniform container for all prompt / code examples throughout the document.
+#let prompt-box(body) = block(
+  width: 100%,
+  inset: 8pt,
+  radius: 4pt,
+  stroke: 0.4pt,
+  fill: luma(250),
+)[
+  #set text(size: 8.5pt)
+  #set par(justify: false, leading: 0.5em)
+  #body
+]
+
 // ── Reusable Table Builders ─────────────────────────────────────────────────
 // Shared layout for the module anchor tables. Each row supplies four cells:
 // Anchor · Schlüsselautoren · Aktivierte Konzepte · Anwendung im CAS.
