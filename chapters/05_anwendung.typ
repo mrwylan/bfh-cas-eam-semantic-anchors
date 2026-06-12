@@ -47,6 +47,8 @@ Die folgenden Prompts zeigen je ein Beispiel mit dem vorgestellten Textsyntax ei
 *PlantUML — Sequenzdiagramm einer Architektur-Freigabe (TOGAF ADM Phase G):*
 #prompt-box[
   «Erzeuge als PlantUML-Sequenzdiagramm die Architektur-Freigabe nach TOGAF ADM Phase G zwischen Architekt, Architecture Board und Projektteam.»
+]
+#prompt-box[
   ```plantuml
   @startuml
   actor Architekt
@@ -63,6 +65,8 @@ Die folgenden Prompts zeigen je ein Beispiel mit dem vorgestellten Textsyntax ei
 *Mermaid — Flowchart des TOGAF ADM-Zyklus:*
 #prompt-box[
   «Stelle den TOGAF ADM-Zyklus (Phasen A bis H) als Mermaid-Flowchart dar.»
+]
+#prompt-box[
   ```mermaid
   flowchart TD
     A[A: Architecture Vision] --> B[B: Business]
@@ -79,6 +83,8 @@ Die folgenden Prompts zeigen je ein Beispiel mit dem vorgestellten Textsyntax ei
 *SVG — dreischichtiges ArchiMate-Schema:*
 #prompt-box[
   «Zeichne als SVG ein dreischichtiges ArchiMate-Schema mit je einem Block für Business, Application und Technology.»
+]
+#prompt-box[
   ```xml
   <svg xmlns="http://www.w3.org/2000/svg" width="240" height="150">
     <rect x="10" y="10"  width="220" height="40"
