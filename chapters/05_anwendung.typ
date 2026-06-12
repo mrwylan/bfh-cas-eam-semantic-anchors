@@ -1,5 +1,5 @@
 // ── Kapitel 5: Anwendungshinweise ───────────────────────────────────────────
-#import "../template.typ": prompt-box
+#import "../template.typ": prompt-box, agent-box
 
 = Anwendungshinweise
 
@@ -48,7 +48,7 @@ Die folgenden Prompts zeigen je ein Beispiel mit dem vorgestellten Textsyntax ei
 #prompt-box[
   «Erzeuge als PlantUML-Sequenzdiagramm die Architektur-Freigabe nach TOGAF ADM Phase G zwischen Architekt, Architecture Board und Projektteam.»
 ]
-#prompt-box[
+#agent-box[
   ```plantuml
   @startuml
   actor Architekt
@@ -66,7 +66,7 @@ Die folgenden Prompts zeigen je ein Beispiel mit dem vorgestellten Textsyntax ei
 #prompt-box[
   «Stelle den TOGAF ADM-Zyklus (Phasen A bis H) als Mermaid-Flowchart dar.»
 ]
-#prompt-box[
+#agent-box[
   ```mermaid
   flowchart TD
     A[A: Architecture Vision] --> B[B: Business]
@@ -84,7 +84,7 @@ Die folgenden Prompts zeigen je ein Beispiel mit dem vorgestellten Textsyntax ei
 #prompt-box[
   «Zeichne als SVG ein dreischichtiges ArchiMate-Schema mit je einem Block für Business, Application und Technology.»
 ]
-#prompt-box[
+#agent-box[
   ```xml
   <svg xmlns="http://www.w3.org/2000/svg" width="240" height="150">
     <rect x="10" y="10"  width="220" height="40"
