@@ -26,38 +26,30 @@ Genau darin liegt der Test: Im Sinne des Vorher-Nachher-Vergleichs (siehe Abschn
 
 *Business Model Canvas, Osterwalder:*
 #prompt-box[
-  ```text
-  Wende das Business Model Canvas (Osterwalder) auf einen Blumenladen an der
-  Einfahrt zu einer Schnellstrasse an.
-  ```
+  «Wende das Business Model Canvas (Osterwalder) auf einen Blumenladen an der
+  Einfahrt zu einer Schnellstrasse an.»
 ]
 
 *Business-IT Alignment, Henderson & Venkatraman:*
 #prompt-box[
-  ```text
-  Analysiere mit Business-IT Alignment (Henderson & Venkatraman): Das Business
+  «Analysiere mit Business-IT Alignment (Henderson & Venkatraman): Das Business
   will eine Cloudlösung und Verkaufsplattform anbieten, die IT betreibt einen
-  Webshop auf eigener Infrastruktur mit direkter Anbindung an das ERP-System.
-  ```
+  Webshop auf eigener Infrastruktur mit direkter Anbindung an das ERP-System.»
 ]
 
 *EA as Strategy, Ross/Weill/Robertson:*
 #prompt-box[
-  ```text
-  Wende EA as Strategy (Ross/Weill/Robertson) an: Ein Blumengrosshändler (B2B)
+  «Wende EA as Strategy (Ross/Weill/Robertson) an: Ein Blumengrosshändler (B2B)
   zentralisiert und übernimmt eine Kette von Blumenläden, wobei jede Filiale eine
   hohe Autonomie aufweist. Wie sieht die EA aus, welche Optionen für eine
-  Strategie sollten erwogen werden?
-  ```
+  Strategie sollten erwogen werden?»
 ]
 
 *Operating Model, MIT CISR:*
 #prompt-box[
-  ```text
-  Wende das Operating Model (MIT CISR) an: Ein Zulieferer für eine Space Mission
+  «Wende das Operating Model (MIT CISR) an: Ein Zulieferer für eine Space Mission
   stellt sowohl Drucktanks als auch Einspritzdüsen her, neu sollte auch die
-  Automobilindustrie als Kunde gewonnen werden.
-  ```
+  Automobilindustrie als Kunde gewonnen werden.»
 ]
 
 == Modul 3: Modellierungssprachen
