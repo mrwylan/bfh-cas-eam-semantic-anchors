@@ -81,6 +81,7 @@
   radius: 4pt,
   stroke: 0.4pt,
   fill: luma(250),
+  breakable: false,
 )[
   #set text(size: 8.5pt)
   #set par(justify: false, leading: 0.5em)
@@ -97,6 +98,7 @@
   radius: (top-left: 0pt, top-right: 4pt, bottom-left: 0pt, bottom-right: 0pt),
   stroke: 0.4pt,
   fill: white,
+  breakable: false,
 )[
   #set text(size: 8.5pt)
   #set par(justify: false, leading: 0.5em)
