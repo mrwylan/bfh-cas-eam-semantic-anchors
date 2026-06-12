@@ -111,7 +111,7 @@ Diese vier Hebel verwandeln den komprimierten Anchor in einen vollständig ausfo
 Der folgende Entwurf zeigt das Ergebnis am Westerman-Beispiel:
 
 #prompt-box[
-  «ROLLE: Du prüfst eine einzelne betriebliche Beobachtung auf ihr Veränderungspotenzial.
+  ROLLE: Du prüfst eine einzelne betriebliche Beobachtung auf ihr Veränderungspotenzial.
 
   HARTE REGEL: Eine reine Kanalsubstitution ist KEINE Transformation.
   Kanalsubstitution = eine Aufgabe, die bisher per Telefon, Papier oder E-Mail lief, läuft neu über Webformular oder App.
@@ -130,7 +130,7 @@ Der folgende Entwurf zeigt das Ergebnis am Westerman-Beispiel:
   3. Transformation: Werbeinventar wird Self-Service-Marktplatz mit dynamischen Preisen und Performance-Daten; Werbung wird eigenständige, skalierbare Erlösquelle. WAS (Datenprodukt statt Fixplatz) und WIE (Erlösmodell) ändern sich. [Transformation] \
   5. Ergebnis: Das Formular ist Digitalisierung. Strategische Frage: Wollen wir aus der Werbeflächen-Verwaltung ein Media-Geschäft machen?
 
-  DEINE BEOBACHTUNG: [hier einsetzen]»
+  DEINE BEOBACHTUNG: [hier einsetzen]
 ]
 
 === Boundary Condition
