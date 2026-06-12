@@ -1,4 +1,5 @@
 // ── Kapitel 5: Anwendungshinweise ───────────────────────────────────────────
+#import "../template.typ": prompt-box, agent-box
 
 = Anwendungshinweise
 
@@ -8,22 +9,22 @@ Semantic Anchors entfalten ihre Wirkung am besten, wenn sie gezielt in Prompts e
 Einige Muster haben sich bewährt:
 
 *Konzeptvertiefung:*
-#quote(block: true)[
+#prompt-box[
   «Erkläre mir die Unterschiede zwischen den vier Operating Models nach Ross/Weill/Robertson im Kontext einer kantonalen Verwaltung.»
 ]
 
 *Methodische Anleitung:*
-#quote(block: true)[
+#prompt-box[
   «Ich möchte eine Application Portfolio Analysis mit dem TIME Model durchführen. Welche Bewertungskriterien sollte ich für eine mittelgrosse Versicherung verwenden?»
 ]
 
 *Querverbindungen herstellen:*
-#quote(block: true)[
+#prompt-box[
   «Wie hängen Capability-Based Planning und die TOGAF ADM Phase B (Business Architecture) zusammen? Zeige mir die Verbindung über ArchiMate Motivation Extension.»
 ]
 
 *Kritische Reflexion:*
-#quote(block: true)[
+#prompt-box[
   «Welche Kritik gibt es am Zachman Framework im Vergleich zu TOGAF? Berücksichtige die Argumente von Kotusev zur praktischen Anwendbarkeit von EA-Frameworks.»
 ]
 
@@ -34,7 +35,7 @@ Die kritische Auseinandersetzung mit den Frameworks – etwa entlang der Argumen
 Die grösste Wirkung entsteht durch die Kombination mehrerer Anchors in einem Prompt.
 Dadurch wird der Kontext präzise eingegrenzt:
 
-#quote(block: true)[
+#prompt-box[
   «Entwickle eine Migrationsstrategie (Architecture Roadmapping, TOGAF Phase E–F) für eine Applikationslandschaft, die ich mit dem TIME Model bewertet habe. Berücksichtige dabei Technical Debt nach dem Cunningham/Fowler-Modell und zeige die Ergebnisse als ArchiMate Migration Viewpoint.»
 ]
 
@@ -44,11 +45,10 @@ Wie im Kapitel zu textbasierten Diagrammen gezeigt, sind auch die Diagrammsprach
 Die folgenden Prompts zeigen je ein Beispiel mit dem vorgestellten Textsyntax eines Formats.
 
 *PlantUML — Sequenzdiagramm einer Architektur-Freigabe (TOGAF ADM Phase G):*
-#quote(block: true)[
+#prompt-box[
   «Erzeuge als PlantUML-Sequenzdiagramm die Architektur-Freigabe nach TOGAF ADM Phase G zwischen Architekt, Architecture Board und Projektteam.»
 ]
-#block(width: 100%, inset: 8pt, radius: 4pt, stroke: 0.4pt, fill: luma(250))[
-  #set text(size: 8.5pt)
+#agent-box[
   ```plantuml
   @startuml
   actor Architekt
@@ -63,11 +63,10 @@ Die folgenden Prompts zeigen je ein Beispiel mit dem vorgestellten Textsyntax ei
 ]
 
 *Mermaid — Flowchart des TOGAF ADM-Zyklus:*
-#quote(block: true)[
+#prompt-box[
   «Stelle den TOGAF ADM-Zyklus (Phasen A bis H) als Mermaid-Flowchart dar.»
 ]
-#block(width: 100%, inset: 8pt, radius: 4pt, stroke: 0.4pt, fill: luma(250))[
-  #set text(size: 8.5pt)
+#agent-box[
   ```mermaid
   flowchart TD
     A[A: Architecture Vision] --> B[B: Business]
@@ -82,11 +81,10 @@ Die folgenden Prompts zeigen je ein Beispiel mit dem vorgestellten Textsyntax ei
 ]
 
 *SVG — dreischichtiges ArchiMate-Schema:*
-#quote(block: true)[
+#prompt-box[
   «Zeichne als SVG ein dreischichtiges ArchiMate-Schema mit je einem Block für Business, Application und Technology.»
 ]
-#block(width: 100%, inset: 8pt, radius: 4pt, stroke: 0.4pt, fill: luma(250))[
-  #set text(size: 8.5pt)
+#agent-box[
   ```xml
   <svg xmlns="http://www.w3.org/2000/svg" width="240" height="150">
     <rect x="10" y="10"  width="220" height="40"

@@ -1,4 +1,5 @@
 // ── Kapitel 1: Konzept ──────────────────────────────────────────────────────
+#import "../template.typ": prompt-box
 
 = Konzept
 
@@ -109,46 +110,27 @@ Bei einem schwachen Modell stoppt das Modell bei der naheliegenden Digitalisieru
 Diese vier Hebel verwandeln den komprimierten Anchor in einen vollständig ausformulierten Prompt.
 Der folgende Entwurf zeigt das Ergebnis am Westerman-Beispiel:
 
-#block(width: 100%, inset: 8pt, radius: 4pt, stroke: 0.4pt, fill: luma(250))[
-  #set text(size: 8pt)
-  #set par(justify: false, leading: 0.5em)
-  ```text
-  ROLLE: Du prüfst eine einzelne betriebliche Beobachtung auf ihr
-  Veränderungspotenzial.
+#prompt-box[
+  ROLLE: Du prüfst eine einzelne betriebliche Beobachtung auf ihr Veränderungspotenzial.
 
   HARTE REGEL: Eine reine Kanalsubstitution ist KEINE Transformation.
-  Kanalsubstitution = eine Aufgabe, die bisher per Telefon, Papier oder E-Mail
-  lief, läuft neu über Webformular oder App. Gleiches Angebot, gleiche Kunden,
-  gleiche Wertlogik, nur anderes Medium. Das nennen wir DIGITALISIERUNG.
-  Transformation liegt NUR vor, wenn sich mindestens eines ändert:
-  WAS angeboten wird, WER bedient wird, oder WIE Wert/Erlös entsteht.
+  Kanalsubstitution = eine Aufgabe, die bisher per Telefon, Papier oder E-Mail lief, läuft neu über Webformular oder App.
+  Gleiches Angebot, gleiche Kunden, gleiche Wertlogik, nur anderes Medium. Das nennen wir DIGITALISIERUNG.
+  Transformation liegt NUR vor, wenn sich mindestens eines ändert: WAS angeboten wird, WER bedient wird, oder WIE Wert/Erlös entsteht.
 
-  VORGEHEN (alle Schritte, keinen überspringen):
-  1. Beobachtung in einem Satz wiedergeben.
-  2. DIGITALISIERUNGS-LESART: die minimale Lösung, die nur den Kanal ersetzt.
-     Pflicht, auch wenn banal.
-  3. TRANSFORMATIONS-LESART: eine Lösung, bei der sich WAS/WER/WIE ändert.
-     Fällt dir keine ein, schreibe "keine erkennbar" und begründe.
-     Nichts erfinden.
-  4. TEST: Wende auf JEDE Lesart die Frage an: Ändert sich WAS/WER/WIE?
-     Markiere jede Lesart als [Digitalisierung] oder [Transformation].
-  5. ERGEBNIS: eine Zeile. Welche Lesart ist welche, und welche strategische
-     Frage folgt daraus.
+  VORGEHEN (alle Schritte, keinen überspringen): \
+  1. Beobachtung in einem Satz wiedergeben. \
+  2. DIGITALISIERUNGS-LESART: die minimale Lösung, die nur den Kanal ersetzt. Pflicht, auch wenn banal. \
+  3. TRANSFORMATIONS-LESART: eine Lösung, bei der sich WAS/WER/WIE ändert. Fällt dir keine ein, schreibe «keine erkennbar» und begründe. Nichts erfinden. \
+  4. TEST: Wende auf JEDE Lesart die Frage an: Ändert sich WAS/WER/WIE? Markiere jede Lesart als [Digitalisierung] oder [Transformation]. \
+  5. ERGEBNIS: eine Zeile. Welche Lesart ist welche, und welche strategische Frage folgt daraus.
 
-  BEISPIEL:
-  Beobachtung: "Lieferanten können Werbeflächen nur telefonisch reservieren."
-  2. Digitalisierung: Online-Buchungsformular mit Verfügbarkeitsanzeige.
-     Telefon wird Web, WAS/WER/WIE unverändert. [Digitalisierung]
-  3. Transformation: Werbeinventar wird Self-Service-Marktplatz mit dynamischen
-     Preisen und Performance-Daten; Werbung wird eigenständige, skalierbare
-     Erlösquelle. WAS (Datenprodukt statt Fixplatz) und WIE (Erlösmodell)
-     ändern sich. [Transformation]
-  5. Ergebnis: Das Formular ist Digitalisierung. Strategische Frage: Wollen wir
-     aus der Werbeflächen-Verwaltung ein Media-Geschäft machen?
+  BEISPIEL — Beobachtung: «Lieferanten können Werbeflächen nur telefonisch reservieren.» \
+  2. Digitalisierung: Online-Buchungsformular mit Verfügbarkeitsanzeige. Telefon wird Web, WAS/WER/WIE unverändert. [Digitalisierung] \
+  3. Transformation: Werbeinventar wird Self-Service-Marktplatz mit dynamischen Preisen und Performance-Daten; Werbung wird eigenständige, skalierbare Erlösquelle. WAS (Datenprodukt statt Fixplatz) und WIE (Erlösmodell) ändern sich. [Transformation] \
+  5. Ergebnis: Das Formular ist Digitalisierung. Strategische Frage: Wollen wir aus der Werbeflächen-Verwaltung ein Media-Geschäft machen?
 
-  DEINE BEOBACHTUNG:
-  [hier einsetzen]
-  ```
+  DEINE BEOBACHTUNG: [hier einsetzen]
 ]
 
 === Boundary Condition

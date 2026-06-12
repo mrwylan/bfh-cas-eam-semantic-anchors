@@ -73,6 +73,38 @@
   body
 }
 
+// ── Reusable Prompt Box ─────────────────────────────────────────────────────
+// Uniform container for all prompt / code examples throughout the document.
+#let prompt-box(body) = block(
+  width: 100%,
+  inset: 8pt,
+  radius: 4pt,
+  stroke: 0.4pt,
+  fill: luma(250),
+  breakable: false,
+)[
+  #set text(size: 8.5pt)
+  #set par(justify: false, leading: 0.5em)
+  #body
+]
+
+// ── Reusable Agent / Response Box ───────────────────────────────────────────
+// Container for LLM response examples (e.g. generated diagram code).
+// White background with only the top-right corner rounded so readers
+// immediately recognise this as a response rather than a prompt.
+#let agent-box(body) = block(
+  width: 100%,
+  inset: 8pt,
+  radius: (top-left: 0pt, top-right: 4pt, bottom-left: 0pt, bottom-right: 0pt),
+  stroke: 0.4pt,
+  fill: white,
+  breakable: false,
+)[
+  #set text(size: 8.5pt)
+  #set par(justify: false, leading: 0.5em)
+  #body
+]
+
 // ── Reusable Table Builders ─────────────────────────────────────────────────
 // Shared layout for the module anchor tables. Each row supplies four cells:
 // Anchor · Schlüsselautoren · Aktivierte Konzepte · Anwendung im CAS.
