@@ -45,11 +45,11 @@ Genau darin liegt der Test: Im Sinne des Vorher-Nachher-Vergleichs (siehe Abschn
   Strategie sollten erwogen werden?»
 ]
 
-*Operating Model, MIT CISR:*
+*IT Governance, Weill & Ross:*
 #prompt-box[
-  «Wende das Operating Model (MIT CISR) an: Ein Zulieferer für eine Space Mission
-  stellt sowohl Drucktanks als auch Einspritzdüsen her, neu sollte auch die
-  Automobilindustrie als Kunde gewonnen werden.»
+  «Welcher IT-Governance-Archetyp (Weill & Ross) passt zu einem Unternehmen im
+  Replication-Operating-Model — und warum? Zeige, welcher Archetyp für die
+  IT-Architektur-Entscheidungen empfohlen wird.»
 ]
 
 == Modul 3: Modellierungssprachen
